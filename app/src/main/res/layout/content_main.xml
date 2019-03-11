@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:resizeableActivity="true"
+        android:id="@+id/linder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <!-- Login progress -->
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="@string/banner_id"
+            tools:layout_editor_absoluteY="253dp"></com.google.android.gms.ads.AdView>
+
+        <EditText
+            android:id="@+id/Text_china"
+            android:layout_width="match_parent"
+            android:layout_height="157dp"
+            android:background="@color/accent"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:lines="20"
+            android:hint="Paste Text Chinese in there"
+            android:resizeableActivity="true"
+            android:singleLine="false" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_dich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bd"
+                android:resizeableActivity="true"
+                android:text="Dịch "
+                android:textColor="#F3F3F3"
+                tools:layout_editor_absoluteY="499dp" />
+
+            <Button
+                android:id="@+id/bt_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/clear"
+                android:resizeableActivity="true"
+                android:text="Clear"
+                android:textColor="#FBFCFB"
+                tools:targetApi="n" />
+
+            <RelativeLayout
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar"
+                    android:background="@color/colorPrimaryDark"
+                    android:elevation="6dp"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tab_layout1" >
+
+                </android.support.v4.view.ViewPager>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="1dp"
+            android:layout_height="1dp" >
+
+        </WebView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

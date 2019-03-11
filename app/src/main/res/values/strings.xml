@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Dịch Chữ Hán</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Dịch Chữ Hán</string>
+    <string name="nav_header_subtitle">Share and view more post in my site https://trickgame24h.blogspot.com/</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner_id">ca-app-pub-6969222413270843/9657696463</string>
+    <string name="id_app">ca-app-pub-6969222413270843~1915825861</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
